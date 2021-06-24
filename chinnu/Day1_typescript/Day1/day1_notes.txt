@@ -1,0 +1,102 @@
+Limitations of Javascript - it is not typesafe.
+typechecking is not there.
+
+Coz of this same variable can be used with different
+type of values.
+Functional parameters will also not checked types. it can
+receive any type values.
+This will create a problem if project is large.
+
+ECMA script - specification / standard used by javascript.
+ES5 - vanilla JS
+ES6 / ES2015 - 
+
+Difference in ES5 and ES6
+1. ES5 is used to create plain vanilla js and it is supported all browsers
+In ES5 classes are implemented using function keyword.
+
+Inheritance in ES5 is implemented using 1. prototype chaining
+					2. Classical inheritance
+					3. pseudoclassical inheritance
+
+2. ES6 has support for almost all OOP features. It uses class keyword
+to implment the class and inheritance is implemented using extends 
+keyword.
+ES6 is supported by modern browsers so in case old browsers it need to
+be transpiled. for this babel transpiler is used.
+
+What is Typescript?
+
+Typescript = ES5 features + ES6 features + additional features.
+
+Typescript is superset of javascript. it used for large and complex
+applications. Typescript is strictly typed i.e it is typesafe.
+
+Typescript will not be understood by browsers so it need to transpiled into
+JS. To transpile it we need tsc i.e typescript compiler.
+
+Typescript can be used on server side with node and as well as client 
+side.
+
+to install typescript
+npm install -g typescript
+
+check its version using tsc --version
+
+save the source file with .ts extension
+and to compile use - tsc file.ts
+to execute use - node file.js
+
+typescript performs the typechecking at compile time itself.
+
+Basic types
+1. number - you can store any number values using this i.e integer,float,
+2. string - for characters or set of characters.
+3. boolean - true/false
+4. array
+5. tuples
+6. Object
+7. enum
+8. any
+9. never
+10.void 
+
+
+never data type is used with function in 2 cases only
+either the function is not going to end its execution i.e it contain
+infinite loop or if function is throwing an error and not handling same.
+
+type in any in typescript allows you to store any type of value i.e
+it can be string/number/object/boolean
+
+any though it allows to store any type of value it is typesafe in such
+a scenario when you want to get /fetch dynamic contents from 3rd party
+library or using asynchronous calls.
+
+When .ts is compiled by default at the time of compilation it follows
+es5 standards so you can specify th standards for compiling .ts file
+i.e tsc file.ts --target es6
+
+reason of it is var keyword does not have block level scope it always
+has function level scope. i.e is the reason doesn't matter where the
+variable is declared inside the function it will always have function
+level scope coz of javascript hoisting.
+that is not the case with let is has a block level scope.
+
+types of functions
+1. named functions
+2. anonymous functions
+3. arrow functions
+4. function with parameters
+
+instead of compiling each and every .ts file individually 
+and specifying target on each compilation seperately i.e es5/es6 
+we can have configuration  done onle once for it and it is possible 
+by generating tsconfig.json file.
+
+command to generate tsconfig.json
+tsc --init
+
+
+
+ 
