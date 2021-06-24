@@ -1,0 +1,32 @@
+//Install rest plugin in vsc for sending POST/GET requests or use Postman
+###
+POST http://localhost:3000/api/user/register
+Content-Type: application/json
+
+{
+    "name": "Aravind",
+    "email": "aravind_s@persistent.com",
+    "password": "aravind123",
+    "admin": false
+}
+
+###
+//Send login req, will return jwt token -> copy-paste below near auth-token
+// token is set to expire in 30min
+POST http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+    "email": "aravind_s@persistent.com",
+    "password": "aravind123"
+}
+
+###
+GET  http://localhost:3000/api/bookings
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgxMDI4MzQyODM1NjM3ZDg4M2IyZmEiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjE5MDcxNjUyLCJleHAiOjE2MTkwNzM0NTJ9.QYjonLIG1fDSNjeZqKWx_2HmmSBhahLmCAV0mwZjXlg
+Content-Type: application/json
+
+###
+GET  http://localhost:3000/api/pantry
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgxMDI4MzQyODM1NjM3ZDg4M2IyZmEiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjE5MDcxNjUyLCJleHAiOjE2MTkwNzM0NTJ9.QYjonLIG1fDSNjeZqKWx_2HmmSBhahLmCAV0mwZjXlg
+Content-Type: application/json

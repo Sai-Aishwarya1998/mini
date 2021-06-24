@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a:hover{
+  text-decoration: none;
+  color: #61dafb;
+}
+
+.card-deck{
+  height: 100%;
+  padding: 0 0 0 20px;
+  /* padding: 0 200px 50px 200px; */
+}
+
+.card-bottom button{
+  float: right;
+}
+.card01{
+  min-width: 275px;
+  margin: 50px; 
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.collapse-group{
+  margin: 0;
+  padding: 50px 30px 0 0;
+}
+
+.padding0{
+  padding: 0;
+}
+
+.checkavailability-container{
+  max-width: 60%;
+  margin: auto;
+  padding: 20px;
+  height: 573px
+}
+
+.checkavailability-info-container{
+  background-color: #fff;
+  
+}
+
+.checkavailability-info{
+  margin: auto;
+  justify-content: center;
+}
+
+.checkavailability-info img{
+  border: 1px solid #282c34;
+  border-radius: 5px;
+  margin: 15px;
+  width: 100%;
+  height: 200px;
+}
+
+.confirm-btn-container{
+  margin: auto;
+  padding: 20px;
+  justify-content: center;
+}
+
+.checkavailability-right-info{
+  margin-top: 10px;
+  padding: 0;
+}
+
+.rightinfo-container{
+  width: 88%;
+}
+
+.checkavailability-right-info label, .checkavailability-info label{
+  margin: 7px 0 3px 0;
+}
+
+.height550{
+  height: 550px;
+}
+
+.chart-container{
+  padding-bottom: 30px;
+  background-color: #282c34;
+}
+
+.center{
+  margin: auto;
+}
+
+.tabs-container{
+  color: #fff;
+}
+
+.new-user :hover{
+  cursor: pointer;
+
+}
+.new-user {
+  color: #EE5057;
+  
+}
+article{
+  background-color: white;
+}
+#tm-section-1{
+  height: 500px;
+}
